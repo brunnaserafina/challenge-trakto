@@ -1,0 +1,18 @@
+<div class="container">
+  <img src="../../../../assets/images/logo-header.svg" alt="Logo Trakto" />
+
+  <div class="menu">
+    <fa-icon [icon]="faCalendarDays"></fa-icon>
+    <p>{{ currentDate | date : "dd/MM/yyyy" }}</p>
+
+    <span class="vertical-bar"></span>
+
+    <fa-icon [icon]="faBell"></fa-icon>
+
+    <span class="vertical-bar"></span>
+
+    <img class="image-perfil" src="{{ avatar }}" alt="Ícone de perfil" />
+
+    <fa-icon [icon]="faSortDown"></fa-icon>
+  </div>
+</div>
