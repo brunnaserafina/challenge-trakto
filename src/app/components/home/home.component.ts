@@ -12,6 +12,6 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {}
 
   navigateToEducationalMaterial() {
-    this.router.navigate(['']);
+    this.router.navigate(['material-didatico']);
   }
 }

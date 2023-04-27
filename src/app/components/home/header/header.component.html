@@ -1,5 +1,12 @@
-<div class="container">
-  <img src="../../../../assets/images/logo-header.svg" alt="Logo Trakto" />
+<div class="container" [ngClass]="headerClass">
+  <span class="logo-and-button">
+    <img src="{{ imageLogo }}" alt="Logo Trakto" />
+
+    <button [ngClass]="display" (click)="goBack()">
+      <img src="../../../../assets/images/logout.png" class="logout" alt="" />
+      <p>Trocar de ambiente</p>
+    </button>
+  </span>
 
   <div class="menu">
     <fa-icon [icon]="faCalendarDays"></fa-icon>

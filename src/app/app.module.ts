@@ -12,6 +12,7 @@ import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/home/header/header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { EducationalMaterialComponent } from './components/educational-material/educational-material.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HomeComponent,
     HeaderComponent,
     HeaderComponent,
+    EducationalMaterialComponent,
   ],
   imports: [
     BrowserModule,

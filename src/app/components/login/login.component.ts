@@ -37,7 +37,9 @@ export class LoginComponent implements OnInit {
           'trakto',
           JSON.stringify({
             name: response.firstname,
-            avatar: response.avatar.url,
+            avatar: response.avatar
+              ? response.avatar.url
+              : '../../../assets/images/perfil-icon.png',
             acess_token: response.access_token,
             refresh_token: response.refresh_token,
           })

@@ -11,6 +11,56 @@
   padding: 0 5vw;
 }
 
+.none {
+  display: none;
+}
+
+.logo-and-button {
+  display: flex;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 254px;
+  height: 55px;
+  border: 1px solid #7183a6;
+  border-radius: 8px;
+  background-color: transparent;
+  font-size: 20px;
+  font-family: Roboto;
+  color: #7183a6;
+  font-weight: 500;
+  margin-left: 55px;
+  cursor: pointer;
+}
+
+.logout {
+  width: 18px;
+}
+
+.page-home {
+  background-color: #252323;
+}
+
+.page-home p {
+  color: #eff2f9;
+}
+
+.page-educational {
+  background-color: var(--white);
+}
+
+.page-educational p {
+  color: #7183a6;
+}
+
+.page-educational fa-icon {
+  color: #7183a6;
+  font-size: 20px;
+}
+
 img {
   width: 142px;
 }
@@ -20,6 +70,8 @@ img {
   height: 40px;
   border-radius: 40px;
   margin-right: 8px;
+  object-fit: cover;
+  border: 0.5px solid #7183a6;
 }
 
 fa-icon {
@@ -28,7 +80,6 @@ fa-icon {
 }
 
 p {
-  color: #eff2f9;
   font-size: 18px;
   font-family: Roboto;
   margin: 0 8px;
