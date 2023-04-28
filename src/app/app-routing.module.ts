@@ -1,3 +1,4 @@
+import { AllMaterialsComponent } from './components/all-materials/all-materials.component';
 import { EducationalMaterialComponent } from './components/educational-material/educational-material.component';
 import { HomeComponent } from './components/home/home.component';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -19,6 +20,11 @@ const routes: Routes = [
   {
     path: 'material-didatico',
     component: EducationalMaterialComponent,
+    canActivate: [AuthGuard],
+  },
+  {
+    path: 'material-didatico/todos',
+    component: AllMaterialsComponent,
     canActivate: [AuthGuard],
   },
 ];

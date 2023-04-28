@@ -132,6 +132,7 @@ main {
   justify-content: center;
   align-items: center;
   font-family: Roboto;
+  overflow-x: hidden;
 }
 
 :root {
@@ -140,5 +141,3 @@ main {
   --blue-dark: #04183e;
   --white: #ffffff;
 }
-
-

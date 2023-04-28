@@ -33,7 +33,7 @@ export class EducationalMaterialComponent {
   constructor(private router: Router, private service: AuthenticationService) {}
 
   ngOnInit(): void {
-    this.service.listAllDesigns().subscribe((response: any) => {
+    this.service.listLastTenDesigns().subscribe((response: any) => {
       this.data = response.data;
       this.hasNextPage = response.hasNextPage;
       this.hasPreviousPage = response.hasPreviousPage;
@@ -60,5 +60,9 @@ export class EducationalMaterialComponent {
       left: this.widgetsContent.nativeElement.scrollLeft - 500,
       behavior: 'smooth',
     });
+  }
+
+  navigateToAllMaterials() {
+    this.router.navigate(['material-didatico/todos']);
   }
 }

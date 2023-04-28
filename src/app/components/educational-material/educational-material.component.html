@@ -1,69 +1,73 @@
-<app-header></app-header>
-<main>
-  <img
-    class="poster"
-    src="../../../assets/images/poster-jornada-trakto.png"
-    alt="Poster Jornada Trakto"
-  />
+<section class="educational-material">
+  <app-header></app-header>
+  <main>
+    <img
+      class="poster"
+      src="../../../assets/images/poster-jornada-trakto.png"
+      alt="Poster Jornada Trakto"
+    />
 
-  <div class="apresentations">
-    <div class="options-apresentation">
-      <span>
-        <span class="week"
-          >Semana 01/{{ currentDate | date : "MM" }} até
-          {{ currentDate | date : "dd/MM" }}</span
-        >
-        <fa-icon [icon]="faChevronLeft"></fa-icon>
-        <fa-icon [icon]="faChevronRight"></fa-icon>
-      </span>
-
-      <button class="open-content">Ver todo conteúdo</button>
-    </div>
-
-    <h2>Material didático</h2>
-    <p class="subtitle">Acesse suas últimas apresentações de aula.</p>
-
-    <div class="carrousel-container">
-      <fa-icon
-        [icon]="faCircleChevronLeft"
-        class="arrow left"
-        (click)="scrollToLeft()"
-        *ngIf="!isAtStart"
-      ></fa-icon>
-
-      <div class="slides" #widgetsContent>
-        <span *ngFor="let item of data" class="parent">
-          <a
-            href="https://editor.trakto.io/presentation/p/{{ item.id }}"
-            target="_blank"
+    <div class="apresentations">
+      <div class="options-apresentation">
+        <span>
+          <span class="week"
+            >Semana 01/{{ currentDate | date : "MM" }} até
+            {{ currentDate | date : "dd/MM" }}</span
           >
-            <img
-              class="picture-apresentation"
-              src="{{ item.thumbs.high }}"
-              onerror="this.onerror=null; this.src='../../../assets/images/error-onload.png'"
-              alt=""
-            />
-          </a>
-
-          <span class="slides-quantity">
-            {{ item.pages.length }}
-            {{ item.pages.length > 1 ? "Slides" : "Slide" }}
-          </span>
-
-          <a
-            href="https://editor.trakto.io/presentation/p/{{ item.id }}"
-            target="_blank"
-            >{{ item.title }}</a
-          >
+          <fa-icon [icon]="faChevronLeft"></fa-icon>
+          <fa-icon [icon]="faChevronRight"></fa-icon>
         </span>
+
+        <button class="open-content" (click)="navigateToAllMaterials()">
+          Ver todo conteúdo
+        </button>
       </div>
 
-      <fa-icon
-        [icon]="faCircleChevronRight"
-        class="arrow right"
-        (click)="scrollToRight()"
-        *ngIf="!isAtEnd"
-      ></fa-icon>
+      <h2>Material didático</h2>
+      <p class="subtitle">Acesse suas últimas apresentações de aula.</p>
+
+      <div class="carrousel-container">
+        <fa-icon
+          [icon]="faCircleChevronLeft"
+          class="arrow left"
+          (click)="scrollToLeft()"
+          *ngIf="!isAtStart"
+        ></fa-icon>
+
+        <div class="slides" #widgetsContent>
+          <span *ngFor="let item of data" class="parent">
+            <a
+              href="https://editor.trakto.io/presentation/p/{{ item.id }}"
+              target="_blank"
+            >
+              <img
+                class="picture-apresentation"
+                src="{{ item.thumbs.high }}"
+                onerror="this.onerror=null; this.src='../../../assets/images/error-onload.png'"
+                alt=""
+              />
+            </a>
+
+            <span class="slides-quantity">
+              {{ item.pages.length }}
+              {{ item.pages.length > 1 ? "Slides" : "Slide" }}
+            </span>
+
+            <a
+              href="https://editor.trakto.io/presentation/p/{{ item.id }}"
+              target="_blank"
+              >{{ item.title }}</a
+            >
+          </span>
+        </div>
+
+        <fa-icon
+          [icon]="faCircleChevronRight"
+          class="arrow right"
+          (click)="scrollToRight()"
+          *ngIf="!isAtEnd"
+        ></fa-icon>
+      </div>
     </div>
-  </div>
-</main>
+  </main>
+</section>

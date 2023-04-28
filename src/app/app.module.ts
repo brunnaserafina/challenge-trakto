@@ -13,6 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/home/header/header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { EducationalMaterialComponent } from './components/educational-material/educational-material.component';
+import { AllMaterialsComponent } from './components/all-materials/all-materials.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { EducationalMaterialComponent } from './components/educational-material/
     HeaderComponent,
     HeaderComponent,
     EducationalMaterialComponent,
+    AllMaterialsComponent,
   ],
   imports: [
     BrowserModule,

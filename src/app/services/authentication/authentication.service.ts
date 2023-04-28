@@ -14,7 +14,7 @@ export class AuthenticationService {
     return this.http.post<any>(`${this.API}/auth/signin`, user);
   }
 
-  listAllDesigns() {
+  listLastTenDesigns() {
     const tokenString: string | null = localStorage?.getItem('trakto');
     const token = tokenString ? JSON.parse(tokenString).acess_token : null;
 
@@ -24,6 +24,20 @@ export class AuthenticationService {
 
     return this.http.get(
       `${this.API}/document?total_per_page=10&order_by=title&order_orientation=desc`,
+      { headers }
+    );
+  }
+
+  listAllDesigns(){
+    const tokenString: string | null = localStorage?.getItem('trakto');
+    const token = tokenString ? JSON.parse(tokenString).acess_token : null;
+
+    const headers = new HttpHeaders()
+      .set('Authorization', `Bearer ${token}`)
+      .set('Content-Type', 'application/json');
+
+    return this.http.get(
+      `${this.API}/document?order_by=title&order_orientation=desc`,
       { headers }
     );
   }

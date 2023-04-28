@@ -1,0 +1,36 @@
+<section class="all-materials">
+  <app-header></app-header>
+  <main>
+    <div class="apresentations">
+      <h2>Material didático</h2>
+      <p class="subtitle">Acesse suas últimas apresentações de aula.</p>
+
+      <div class="slides">
+        <span *ngFor="let item of data" class="parent">
+          <a
+            href="https://editor.trakto.io/presentation/p/{{ item.id }}"
+            target="_blank"
+          >
+            <img
+              class="picture-apresentation"
+              src="{{ item.thumbs.high }}"
+              onerror="this.onerror=null; this.src='../../../assets/images/error-onload.png'"
+              alt=""
+            />
+          </a>
+
+          <span class="slides-quantity">
+            {{ item.pages.length }}
+            {{ item.pages.length > 1 ? "Slides" : "Slide" }}
+          </span>
+
+          <a
+            href="https://editor.trakto.io/presentation/p/{{ item.id }}"
+            target="_blank"
+            >{{ item.title }}</a
+          >
+        </span>
+      </div>
+    </div>
+  </main>
+</section>

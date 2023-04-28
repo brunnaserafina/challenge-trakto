@@ -37,6 +37,8 @@ export class HeaderComponent implements OnInit {
   goBack() {
     if (window.location.pathname === '/material-didatico') {
       this.router.navigate(['/']);
+    } else if(window.location.pathname === '/material-didatico/todos'){
+      this.router.navigate(['/material-didatico']);
     }
   }
 }
