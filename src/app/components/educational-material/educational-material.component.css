@@ -118,13 +118,14 @@ fa-icon {
   padding: 15px;
   border-radius: 8px;
   cursor: pointer;
-  display: flex;
-  align-items: center;
 }
 
-.options-apresentation button a{
+.options-apresentation button a {
   text-decoration: none;
   color: #ff0100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .open-youtube {
