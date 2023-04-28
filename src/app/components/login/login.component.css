@@ -37,7 +37,7 @@ button {
   cursor: pointer;
 }
 
-div {
+section {
   width: 100vw;
   height: 100vh;
   background-color: #eff2f9;
@@ -62,4 +62,10 @@ p {
 
 span {
   width: 20rem;
+}
+
+@media (max-width: 767px) {
+  form, span, p {
+    width: 90vw;
+  }
 }

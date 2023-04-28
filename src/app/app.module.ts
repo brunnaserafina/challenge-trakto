@@ -31,7 +31,11 @@ import { AllMaterialsComponent } from './components/all-materials/all-materials.
     FormsModule,
     HttpClientModule,
     CommonModule,
-    ToastrModule.forRoot(),
+    ToastrModule.forRoot({
+      timeOut: 10000,
+      positionClass: 'toast-bottom-left',
+      preventDuplicates: true,
+    }),
     BrowserAnimationsModule,
     FontAwesomeModule,
   ],

@@ -4,33 +4,34 @@
   href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
   rel="stylesheet"
 />
+<section class="home">
+  <div>
+    <app-header></app-header>
+    <span (click)="navigateToEducationalMaterial()">
+      <h1>Material didático</h1>
+      <span class="horizontal-bar blue"></span>
+      <img
+        src="../../../assets/images/home-material-didatico.png"
+        alt="Material didático"
+      />
+    </span>
 
-<div>
-  <app-header></app-header>
-  <span (click)="navigateToEducationalMaterial()">
-    <h1>Material didático</h1>
-    <span class="horizontal-bar blue"></span>
-    <img
-      src="../../../assets/images/home-material-didatico.png"
-      alt="Material didático"
-    />
-  </span>
+    <span>
+      <h1>Quiz</h1>
+      <span class="horizontal-bar green"></span>
+      <img src="../../../assets/images/home-quiz.png" alt="Quiz" />
+    </span>
 
-  <span>
-    <h1>Quiz</h1>
-    <span class="horizontal-bar green"></span>
-    <img src="../../../assets/images/home-quiz.png" alt="Quiz" />
-  </span>
+    <span>
+      <h1>Desenho</h1>
+      <span class="horizontal-bar pink"></span>
+      <img src="../../../assets/images/home-desenho.png" alt="Desenho" />
+    </span>
 
-  <span>
-    <h1>Desenho</h1>
-    <span class="horizontal-bar pink"></span>
-    <img src="../../../assets/images/home-desenho.png" alt="Desenho" />
-  </span>
-
-  <span>
-    <h1>Youtube</h1>
-    <span class="horizontal-bar red"></span>
-    <img src="../../../assets/images/home-youtube.png" alt="Youtube" />
-  </span>
-</div>
+    <span>
+      <h1>Youtube</h1>
+      <span class="horizontal-bar red"></span>
+      <img src="../../../assets/images/home-youtube.png" alt="Youtube" />
+    </span>
+  </div>
+</section>

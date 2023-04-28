@@ -9,17 +9,24 @@
   </span>
 
   <div class="menu">
-    <fa-icon [icon]="faCalendarDays"></fa-icon>
+    <fa-icon class="calendar" [icon]="faCalendarDays"></fa-icon>
     <p>{{ currentDate | date : "dd/MM/yyyy" }}</p>
 
     <span class="vertical-bar"></span>
 
-    <fa-icon [icon]="faBell"></fa-icon>
+    <fa-icon class="bell" [icon]="faBell"></fa-icon>
 
     <span class="vertical-bar"></span>
 
     <img class="image-perfil" src="{{ avatar }}" alt="Ícone de perfil" />
 
-    <fa-icon [icon]="faSortDown"></fa-icon>
+    <fa-icon (click)="showLogoutMenu()" [icon]="faSortDown"></fa-icon>
+
+    <span class="logout-menu" [hidden]="!showMenu">
+      <h5>Sua conta</h5>
+      <h5>Perfil</h5>
+      <h5>Suporte</h5>
+      <a (click)="logout()">Sair da conta</a>
+    </span>
   </div>
 </div>

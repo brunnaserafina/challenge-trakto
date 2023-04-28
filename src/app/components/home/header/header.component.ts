@@ -37,8 +37,19 @@ export class HeaderComponent implements OnInit {
   goBack() {
     if (window.location.pathname === '/material-didatico') {
       this.router.navigate(['/']);
-    } else if(window.location.pathname === '/material-didatico/todos'){
+    } else if (window.location.pathname === '/material-didatico/todos') {
       this.router.navigate(['/material-didatico']);
     }
+  }
+
+  showMenu = false;
+
+  showLogoutMenu() {
+    this.showMenu = !this.showMenu;
+  }
+
+  logout() {
+    localStorage.clear();
+    this.router.navigate(['login']);
   }
 }
