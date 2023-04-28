@@ -122,6 +122,11 @@ fa-icon {
   align-items: center;
 }
 
+.options-apresentation button a{
+  text-decoration: none;
+  color: #ff0100;
+}
+
 .open-youtube {
   color: #ff0100;
   border: 1px solid #ff0100;
