@@ -69,7 +69,9 @@
 ```
 5. Por fim, abra o navegador e digite o endereço "http://localhost:4200" para acessar a aplicação!
 
-6. Para parar o servidor, basta pressionar Ctrl + C no terminal.
+6. Para fazer o login é preciso criar uma conta gratuita com e-mail e senha na plataforma da Trakto "https://dashboard.trakto.io/", e para um melhor aproveitamento das funcionalidades do site é necessário criar algumas apresentações.
+
+7. Para parar o servidor, basta pressionar Ctrl + C no terminal.
 
 ###
 <br />
