@@ -1,27 +1,79 @@
-# Trakto
+<h1 align="left">Trakto</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
+###
 
-## Development server
+<p align="left">Esta é uma aplicação front-end utilizando o framework Angular 2+, consumindo a API da Trakto, para realizar a história de um professor que utilza a plataforma para elaborar apresentações.</p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+###
 
-## Code scaffolding
+<div align="center"> 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<img height="550" src="https://user-images.githubusercontent.com/106851605/235033585-33625af1-28a2-4127-bede-d9356b4173ad.png" />
 
-## Build
+</div> 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+###
 
-## Running unit tests
+<p align="center">Acesse a aplicação => https://challenge-trakto.vercel.app</p>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+###
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+<br clear="both">
 
-## Further help
+### ⚙️ Funcionalidades
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Login com e-mail e senha
+- Tela inicial com os módulos da Trakto TV
+- Cabeçalho dinâmico
+- Trocar de ambiente
+- Logout
+- Visualização das últimas dez apresentações criadas
+- Visualização das as apresentações criadas
+
+###
+
+<br />
+
+### 🛠️ Tecnologias utilizadas
+
+###
+  <img align="left" alt="angular" height="30px" src="https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white" />
+  <img align="left" alt="angular" height="30px" src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img align="left" alt="html" height="30px" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" />
+  <img align="left" alt="css" height="30px" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" />
+
+
+###
+
+<br />
+<br />
+<br />
+
+### ▶️ Rodando a aplicação
+
+1. Clone este repositório em uma pasta de sua preferência:
+
+```bash
+ $ git clone https://github.com/brunnaserafina/challenge-trakto.git
+```
+2. Certifique-se de que você tenha instalado o Node.js e o Angular CLI em sua máquina. Você pode verificar a instalação digitando "node -v" e "ng version" no terminal.
+
+3. Vá até a raíz do projeto e instale as dependências:
+```bash
+ $ npm i
+```
+4. Inicie o servidor de desenvolvimento no terminal:
+```bash
+ $ ng serve
+```
+5. Por fim, abra o navegador e digite o endereço "http://localhost:4200" para acessar a aplicação!
+
+6. Para parar o servidor, basta pressionar Ctrl + C no terminal.
+
+###
+<br />
+
+### 🙇🏻‍♀️ Autora
+
+- [@brunnaserafina](https://www.github.com/brunnaserafina)
